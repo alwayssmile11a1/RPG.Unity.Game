@@ -7,8 +7,6 @@ public class PlayerController : MonoBehaviour {
 
     public LayerMask movementMask;
 
-
-
     Camera cam;
     NavMeshAgent agent;
 
@@ -16,6 +14,7 @@ public class PlayerController : MonoBehaviour {
 	void Start () {
         cam = Camera.main;
         agent = GetComponent<NavMeshAgent>();
+        
 	}
 	
 	// Update is called once per frame
@@ -28,7 +27,7 @@ public class PlayerController : MonoBehaviour {
 
             if (Physics.Raycast(ray, out hit, 100, movementMask))
             {
-                Debug.Log(hit.collider.name);
+                //Debug.Log(hit.collider.name);
                 agent.SetDestination(hit.point);
             }
 

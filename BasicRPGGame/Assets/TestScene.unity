@@ -140,10 +140,10 @@ NavMeshAgent:
   m_Enabled: 1
   m_AgentTypeID: 0
   m_Radius: 0.5
-  m_Speed: 4
+  m_Speed: 20
   m_Acceleration: 20
   avoidancePriority: 50
-  m_AngularSpeed: 2000
+  m_AngularSpeed: 20000
   m_StoppingDistance: 0
   m_AutoTraverseOffMeshLink: 1
   m_AutoBraking: 1
@@ -524,6 +524,7 @@ GameObject:
   - component: {fileID: 1858684857}
   - component: {fileID: 1858684856}
   - component: {fileID: 1858684855}
+  - component: {fileID: 1858684859}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -593,3 +594,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 36.738003, y: 0, z: 0}
+--- !u!114 &1858684859
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1858684854}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 87f0b467ee0256547b5a734d8efeef15, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  target: {fileID: 75974056}
+  offsetFromTarget: {x: 0, y: -1.71, z: 1.16}
+  pitch: 0.5
+  zoomSpeed: 4
+  rotateSpeed: 100
